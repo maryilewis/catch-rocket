@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dphmiutl2ms8y"]
+
+[ext_resource type="Script" path="res://Level/Lane/Lane.gd" id="1_pmlqy"]
+[ext_resource type="Theme" uid="uid://dxscbys40w474" path="res://Level/number_label_theme.tres" id="2_c6tv2"]
+
+[node name="ColorRect" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+color = Color(0.607843, 1, 0.439216, 1)
+script = ExtResource("1_pmlqy")
+
+[node name="LabelTop" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 99.0
+grow_horizontal = 2
+theme = ExtResource("2_c6tv2")
+text = "3"
+horizontal_alignment = 1
+
+[node name="LabelBottom" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -76.5
+offset_top = -117.0
+offset_right = 76.5
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_c6tv2")
+text = "3"
+horizontal_alignment = 1

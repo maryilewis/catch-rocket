@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://daqdxtqjjb22o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uboe3"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0, 0, 0, 0.87451)
+
+[resource]
+Button/font_sizes/font_size = 48
+Button/styles/normal = SubResource("StyleBoxFlat_uboe3")
+Label/font_sizes/font_size = 48

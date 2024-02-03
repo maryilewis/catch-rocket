@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://byttalj77khjv"]
+
+[ext_resource type="Texture2D" uid="uid://fk5kdjwbbmyn" path="res://Images/Henry.png" id="1_hwb62"]
+[ext_resource type="Script" path="res://Characters/Player/Player.gd" id="1_iocny"]
+
+[sub_resource type="Gradient" id="Gradient_a4x2r"]
+colors = PackedColorArray(1, 0.846106, 0.175077, 1, 0.760784, 0.6, 0.278431, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_w7h82"]
+gradient = SubResource("Gradient_a4x2r")
+width = 8
+height = 8
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_iocny")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 100
+lifetime = 2.0
+one_shot = true
+explosiveness = 0.38
+randomness = 0.53
+lifetime_randomness = 0.41
+texture = SubResource("GradientTexture2D_w7h82")
+spread = 180.0
+gravity = Vector2(0, 60)
+initial_velocity_max = 414.14
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hwb62")
